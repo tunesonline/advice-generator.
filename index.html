@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A simple advice generator that gives you a little wisdom with every click.">
+  <title>Advice Generator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="page">
+    <section class="advice-card" aria-labelledby="card-title">
+      <p class="eyebrow" id="card-title">ADVICE <span id="advice-id">#--</span></p>
+
+      <p class="advice-text" id="advice-text" aria-live="polite">
+        Your advice will appear here.
+      </p>
+
+      <div class="divider" aria-hidden="true">
+        <span></span>
+        <svg viewBox="0 0 24 16" role="img" aria-label="Decorative divider">
+          <rect x="3" y="2" width="6" height="12" rx="3"></rect>
+          <rect x="15" y="2" width="6" height="12" rx="3"></rect>
+        </svg>
+        <span></span>
+      </div>
+
+      <p class="status-message" id="status-message" role="status">Getting your first advice...</p>
+
+      <button class="dice-button" id="advice-button" type="button" aria-label="Get new advice">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <rect x="4" y="4" width="16" height="16" rx="3"></rect>
+          <circle cx="8" cy="8" r="1.4"></circle>
+          <circle cx="16" cy="8" r="1.4"></circle>
+          <circle cx="12" cy="12" r="1.4"></circle>
+          <circle cx="8" cy="16" r="1.4"></circle>
+          <circle cx="16" cy="16" r="1.4"></circle>
+        </svg>
+      </button>
+    </section>
+    <p class="page-note">A little advice can go a long way.</p>
+  </main>
+</body>
+</html>
